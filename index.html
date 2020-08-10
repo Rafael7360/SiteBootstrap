@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Rafa Akami</title>
+	
+	<meta name="viewport" content="widh=device-widh, initial-scale=1, shink-to-fit=no">
+	<meta name="keywords" content="Criando um layout responsivo com bootstrap">
+
+	<!-- FOLHA DE ESTILO - CSS  -->
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+
+	<!-- FOLHA DE ESTILO DO BOOTSTRAP -->
+
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+
+</head>
+
+<body>
+
+
+		<!-- NAVEGAÇÃO  -->
+
+	<div class="container">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			<a class="navbar-brand" href="#"> Rafa Akami </a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSite">
+
+				<ul class="navbar-nav ml-auto">
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">Início</a>
+					</li>
+						
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sobre</a>
+					</li>
+					
+					<li class="nav-item dropdown">
+						
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownSite" data-toggle="dropdown">Produtos</a>
+						
+						<div class="dropdown-menu bg-primary">
+							<a class="dropdown-item" href="#"> Acampamentos </a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#"> Pesca </a>
+							<a class="dropdown-item" href="#"> Cameras </a>
+							<a class="dropdown-item" href="#"> Acessorios </a>
+						</div>
+
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">contatos</a>
+					</li>	
+					
+
+				</ul>	
+
+			</div>
+			
+		</nav>
+
+		<!-- CAROUSEL / SLIDE -->
+
+		<div id="carouselSite" class="carousel slide my-4" data-ride="carousel">
+
+		<!-- indicadores de quatidades de slide  -->
+ 
+				<ol class="carousel-indicators">
+					<li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselSite" data-slide-to="1"></li>
+					<li data-target="#carouselSite" data-slide-to="2"></li>
+				</ol>
+		
+			
+			<div class="carousel-inner">
+
+				<div class="carousel-item active">
+					<img class="d-block img-fluid" src="imagem/portfolio-3.jpeg" alt="pimeira slide">
+				
+
+					<div class="carousel-caption d-none d-lg-block text-primary">
+						<h1>Montanhas</h1>
+						<p class="lead">Paisagem</p>
+					</div>
+				</div>
+				
+
+				<div class="carousel-item">
+					<img class="d-block img-fluid" src="imagem/portfolio-1.jpg" alt="segundo slide">
+				
+					<div class="carousel-caption d-none d-lg-block text-primary">
+						<h1>Cogumelos</h1>
+						<p class="lead">Cogumelos vermelhos</p>
+					</div>	
+				</div>
+
+				<div class="carousel-item">
+					<img class="d-block img-fluid" src="imagem/portfolio-6.jpeg" alt="terceiro slide">
+				
+					<div class="carousel-caption d-none d-lg-block text-primary">
+						<h1>Alce</h1>
+						<p class="lead">Animais </p>
+					</div>	
+				</div>
+					
+
+			</div>
+				
+		</div>
+
+						<!-- Controle de anterior e proxiodas imagem carousel -->
+
+			<a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previuos</span>
+				</a>			
+				
+				<a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+
+				<!-- CONTEUDO DO SITE -->
+			
+				<div class="container">
+
+					<div class="row">
+						<div class="col-12 text-center my-5">
+
+							<h1 class="display-3">Rafa Akami</h1>
+							<p class="lead">Bem-vindo ao maior site de em artigos de acampagem..</p>
+							
+						</div>						
+					</div>
+
+					<div class="row">
+						<div class="col-3">
+
+							<nav id="navbarVertical" class="navbar navbar-light bg-light">
+								<nav class="nav nav-pills flex-column">
+									
+									<a class="nav-link" href="#acampamento">Acampamento</a>
+										<nav class="nav nav-pills flex-column">
+											<a class="nav-link ml-3" href="#Barraca">Barracas</a>
+											<a class="nav-link ml-3" href="#cochao">Cochão</a>
+											<a class="nav-link ml-3 mb-3" href="#coberta">Cobertas</a>
+										</nav>
+
+									<a class="nav-link" href="#pesca">Pesca</a>
+										<nav class="nav nav-pills flex-column">
+												<a class="nav-link ml-3" href="#vara">Varas</a>
+												<a class="nav-link ml-3" href="#linha">Linhas</a>
+												<a class="nav-link ml-3 mb-3" href="#isca">Iscas</a>
+											</nav>
+
+									<a class="nav-link" href="#camera">Cameras</a>
+										<nav class="nav nav-pills flex-column">
+											<a class="nav-link ml-3" href="#tecPix">TecPix</a>
+											<a class="nav-link ml-3" href="#sansung">Sansung</a>
+											<a class="nav-link ml-3 mb-3" href="#lg">LG</a>
+										</nav>
+
+									<a class="nav-link" href="cessorios">Acessorios</a>
+										<nav class="nav nav-pills flex-column">
+											<a class="nav-link ml-3" href="#lampeao">Lampeão</a>
+											<a class="nav-link ml-3" href="#lanterna">Lanterna</a>
+											<a class="nav-link ml-3" href="#erdeneira">Perdeneira</a>
+										</nav>
+
+								</nav> 								
+							</nav>
+							
+						</div>	
+							
+							<div class="col-9">
+								<div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+									<h4 id="#acampamento">Barracas</h4>
+									<p>BARRACA ipsum dolor sit amet, consectetur adipisicing elit. Qui cum blanditiis et porro placeat, voluptates praesentium error facilis vero nihil itaque vel aliquam dolorum harum distinctio, 	assumenda iste rem doloremque.
+									</p>
+
+									<h5 id="#cochao">Cochão</h5>
+									<p>COCHÃO ipsum dolor sit amet, consectetur adipisicing elit. Non architecto, maxime, dolore, quisquam officiis libero eius repellat adipisci molestias numquam iste id eaque rerum dolorem vero iusto! Blanditiis, et, soluta!
+									</p>
+
+									<h4 id="#coberta">Cobertas</h4>
+									<p>COBERTAS ipsum dolor sit amet, consectetur adipisicing elit. Qui cum blanditiis et porro placeat, voluptates praesentium error facilis vero nihil itaque vel aliquam dolorum harum distinctio, 	assumenda iste rem doloremque.
+									</p>
+
+									<h5 id="#vara">Varas</h5>
+									<p>VARAS ipsum dolor sit amet, consectetur adipisicing elit. Non architecto, maxime, dolore, quisquam officiis libero eius repellat adipisci molestias numquam iste id eaque rerum dolorem vero iusto! Blanditiis, et, soluta!
+									</p>
+
+									<h5 id="#linha">Linhas</h5>
+									<p>LINHAS ipsum dolor sit amet, consectetur adipisicing elit. Non architecto, maxime, dolore, quisquam officiis libero eius repellat adipisci molestias numquam iste id eaque rerum dolorem vero iusto! Blanditiis, et, soluta!
+									</p>
+
+									<h5 id="#isca">Iscas</h5>
+									<p>ISCAS ipsum dolor sit amet, consectetur adipisicing elit. Non architecto, maxime, dolore, quisquam officiis libero eius repellat adipisci molestias numquam iste id eaque rerum dolorem vero iusto! Blanditiis, et, soluta!
+									</p>
+
+									<h4 id="#tecPix">TecPix</h4>
+									<p>TECPIX ipsum dolor sit amet, consectetur adipisicing elit. Qui cum blanditiis et porro placeat, voluptates praesentium error facilis vero nihil itaque vel aliquam dolorum harum distinctio, 	assumenda iste rem doloremque.
+									</p>
+
+									<h5 id="#sansung">Sansung</h5>
+									<p>SANSUNG ipsum dolor sit amet, consectetur adipisicing elit. Non architecto, maxime, dolore, quisquam officiis libero eius repellat adipisci molestias numquam iste id eaque rerum dolorem vero iusto! Blanditiis, et, soluta!
+									</p>
+
+									<h4 id="#lg">LG</h4>
+									<p>LG ipsum dolor sit amet, consectetur adipisicing elit. Qui cum blanditiis et porro placeat, voluptates praesentium error facilis vero nihil itaque vel aliquam dolorum harum distinctio, 	assumenda iste rem doloremque.
+									</p>
+
+									<h5 id="#lampeao">Lampeão</h5>
+									<p>LAMPEÂO ipsum dolor sit amet, consectetur adipisicing elit. Non architecto, maxime, dolore, quisquam officiis libero eius repellat adipisci molestias numquam iste id eaque rerum dolorem vero iusto! Blanditiis, et, soluta!
+									</p>
+
+									<h4 id="#lanterna">Lanterna</h4>
+									<p>LANTERNA ipsum dolor sit amet, consectetur adipisicing elit. Qui cum blanditiis et porro placeat, voluptates praesentium error facilis vero nihil itaque vel aliquam dolorum harum distinctio, 	assumenda iste rem doloremque.
+									</p>
+
+									<h5 id="#perdeneira">Perdeneiras</h5>
+									<p>PERDENEIRA ipsum dolor sit amet, consectetur adipisicing elit. Non architecto, maxime, dolore, quisquam officiis libero eius repellat adipisci molestias numquam iste id eaque rerum dolorem vero iusto! Blanditiis, et, soluta!
+									</p>
+									
+								</div>
+							</div>
+
+					</div>
+					
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+			<!--
+
+			<div class="row">
+
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="card">
+						<div class="card-body texte-center">
+							
+							<h4 class="card-title">Texto do Card 1</h4>
+							
+							<p class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quos officia fugiat explicabo voluptate in sunt, possimus. Voluptatum sunt officia error nesciunt laborum quasi nam hic repudiandae sequi, qui in?
+							</p>
+
+							<a class="card-link" href="#">Para saber mais clique aqui! </a>
+	
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="card">
+						<div class="card-body texte-center">
+							
+							<h4 class="card-title">Texto do Card 2</h4>
+							
+							<p class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quos officia fugiat explicabo voluptate in sunt, possimus. Voluptatum sunt officia error nesciunt laborum quasi nam hic repudiandae sequi, qui in?
+							</p>
+
+							<a class="card-link" href="#">Para saber mais clique aqui! </a>
+	
+						</div>
+					</div>
+					
+				</div>
+
+
+
+				<div class="col-sm-12 col-md-4 mb-4">
+					<div class="card">
+						<div class="card-body texte-center">
+							
+							<h4 class="card-title">Texto do Card 3</h4>
+							
+							<p class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quos officia fugiat explicabo voluptate in sunt, possimus. Voluptatum sunt officia error nesciunt laborum quasi nam hic repudiandae sequi, qui in?
+							</p>
+
+							<a class="card-link" href="#">Para saber mais clique aqui! </a>
+	
+						</div>
+					</div>
+					
+				</div>
+				
+
+				<div class="jumbotron">
+					
+					<h1 class="display-3"> Meus Primeiro Site com BOOTSTRAP</h1>
+
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quia neque inventore ipsa nam repellendus quam cupiditate ratione unde cumque totam odio temporibus sequi commodi id, numquam corrupti est voluptatum. 
+					</p>
+
+					<p class="lead">
+						<a class="btn btn-primary btn-lg " href="#">CLIQUE AQUI!</a>
+					</p>
+
+				</div>
+				
+				-->
+
+			</div>
+
+	</div>
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,10 @@
+#carouselSite img {
+	width: 100%;
+	max-height: 500px;
+}
+
+.scrollspySite {
+	position: relative;
+	overflow: auto;
+	height: 380px;
+}
